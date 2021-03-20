@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap");
+
+:root {
+  font-size: 150%;
+  --base-unit: 32px;
+}
+
+body {
+  background-color: rgba(249, 250, 251);
+  padding: calc(4 * var(--base-unit)) calc(var(--base-unit) / 2);
+  margin: auto;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  max-width: calc(20 * var(--base-unit));
+}
+
+strong {
+  font-weight: 500;
+}
+
+.bio,
+.portrait {
+  text-align: center;
+}
+
+.portrait img {
+  height: calc(3 * var(--base-unit));
+  width: calc(3 * var(--base-unit));
+  border-radius: 100%;
+  margin-bottom: var(--base-unit);
+}
