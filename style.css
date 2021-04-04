@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&display=swap");
 
 :root {
-  font-size: 150%;
+  font-size: 130%;
   --base-unit: 32px;
 }
 
@@ -14,12 +14,25 @@ body {
   max-width: calc(20 * var(--base-unit));
 }
 
+a {
+  color: #047857;
+}
+
+a:hover {
+  color: #10b981;
+}
+
 strong {
   font-weight: 500;
 }
 
+.bio {
+  font-size: 1.1rem;
+}
+
 .bio,
-.portrait {
+.portrait,
+.more {
   text-align: center;
 }
 
