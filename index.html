@@ -13,7 +13,7 @@
 </head>
 <body>
     <aside class="portrait">
-        <img src="penguin.jpg" alt="">
+        <img src="penguin.jpg" id="penguin" alt="">
     </aside>
 
     <article class="bio">
@@ -23,5 +23,15 @@
     <aside class="more"><em>Article:</em> <a href="https://www.kode24.no/guider/test-appen-din-med-burpsuite---mitt-viktigste-verktoy/73567709">Introduction to Burp Suite</a> (in Norwegian)</aside>
 
     <aside class="more"><em>Podcast:</em> <a href="https://casto3.no/s03e06-sikker-utvikling-ssdlc/">Secure Development</a> (in Norwegian)</aside>
+    
+    <script>
+        const penguin = document.getElementById("penguin");
+        const counter = 0;
+        setInterval(function {
+            const angle = counter % 360;
+            penguin.style.transform = `rotate(${angle}deg)`;
+            counter++;
+        }, 100);
+    </script>
 </body>
 </html>
