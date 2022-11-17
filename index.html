@@ -27,11 +27,14 @@
     <script>
         const penguin = document.getElementById("penguin");
         const counter = 0;
-        setInterval(function {
+        
+        function spinny() {
             const angle = counter % 360;
             penguin.style.transform = `rotate(${angle}deg)`;
             counter++;
-        }, 100);
+        }
+        
+        setInterval(spinny , 100);
     </script>
 </body>
 </html>
